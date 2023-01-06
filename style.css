@@ -1,0 +1,93 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  padding: 50px;
+}
+.container .left-menu {
+  flex: 1;
+}
+.container .left-menu .search {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid salmon;
+  color: salmon;
+  font-size: large;
+}
+
+.container .left-menu .search::-moz-placeholder {
+  color: salmon;
+}
+.container .left-menu .search:-ms-input-placeholder {
+  color: salmon;
+}
+.container .left-menu .search::placeholder {
+  color: salmon;
+}
+.container .left-menu h1 {
+  font-size: 32px;
+  color: salmon;
+  font-weight: 300;
+}
+.container .left-menu .label {
+  font-size: 32px;
+  color: salmon;
+  font-weight: 300;
+  cursor: pointer;
+}
+.container .left-menu .category-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: salmon;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+.container .left-menu .category-container .category {
+  font-size: 20px;
+  padding: 5px;
+}
+.container .left-menu .category-container .category:hover {
+  transform: scale(1);
+}
+.container .left-menu #price-range {
+  margin-top: 15px;
+  width: 200px;
+}
+.container .left-menu #price-range:hover {
+  cursor: pointer;
+}
+.container .content {
+  flex: 4;
+}
+.container .content .products {
+  display: grid;
+  -moz-column-gap: 50px;
+       column-gap: 75px;
+  row-gap: 120px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 200px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.container .content .product {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  border-bottom: 5px solid salmon;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+.container .content img {
+  width: 150px;
+  height: 200px;
+  cursor: pointer;
+}
+.container .content img:hover {
+  transform: scale(1.15);
+}/*# sourceMappingURL=style.css.map */
